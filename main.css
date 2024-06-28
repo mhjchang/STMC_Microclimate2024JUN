@@ -24,6 +24,32 @@ body {
 	z-index: 				1; /* TODO Solve this in HTML */
 }
 
+.menu{
+    width: 900px;
+    float: right;
+    height: 80px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+
 h2 {
 	margin-top:				0;
 	margin-bottom:			0;
