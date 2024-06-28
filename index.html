@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<title>STMC_UrbanMet</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+	
+	<body>
+	
+		<div id="container"></div>
+		
+		<div id="titel">
+			<h2>香港大學 x 沙循 校園微氣候研究</h2>
+			<h2>HKU x STMC Campus Microclimate Study</h2>
+			<h6>研究員: 張文曦 (2015年沙循畢業生) <br/> 現為香港大學地理系博士生 <br/> Researcher: Jeffrey Chang (2015 STMC Alumni) <br/>        Currently PhD Candidate at HKU Dept. of Geography</h6>
+			
+		</div>
+		
+		<div id="logo">
+			<img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/small_demo2.svg">
+		</div>
+		
+		<div class="circleLeft" id="infoBtn"></div>
+
+		<svg id="info" width="3em" height="3em" viewBox="0 0 16 16" fill="#FFFFFF">
+			<path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+			<path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+			<circle cx="8" cy="4.5" r="1"/>
+		</svg>
+		</div>
+
+		<div class="circleLeft2" id="infoBtm"></div>
+
+		<svg id="info" width="3em" height="3em" viewBox="0 0 16 16" fill="#FFFFFF">
+			<path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+			<path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+			<circle cx="8" cy="4.5" r="1"/>
+		</svg>
+		</div>
+		
+		<div class="circleRight" id="mailBtn">
+			<svg id="mail" viewBox="0 0 16 16" fill="#FFFFFF">
+				<path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+				<path d="M.05 3.555C.017 3.698 0 3.847 0 4v.697l5.803 3.546L0 11.801V12c0 .306.069.596.192.856l6.57-4.027L8 9.586l1.239-.757 6.57 4.027c.122-.26.191-.55.191-.856v-.2l-5.803-3.557L16 4.697V4c0-.153-.017-.302-.05-.445L8 8.414.05 3.555z"/>
+			</svg>
+		</div>
+		
+		<div class="infomodal" id="infomodal">
+			<div class="modal-content">
+				<span class="infoclose">&times;</span>
+				<p style="font-size:24px;font-weight:bold;"> 跨學科可持續發展探究 Cross-disciplinary Sustainability Research Programme </p></br>
+				<p><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/top.png" style="width:100%;"></p>
+				<p style="color:orange;font-size:18px;font-weight:bold;"><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Icon1.png" style="width:5%;"> <b> 公民科學應用 Citizen Science Applications </b></p>
+				<p> 研究結合了同學DIY拼砌的氣象觀測儀器、以及由香港大學自行設計的微氣候監測儀，於校園內不同角落中量度相關氣象資訊，讓同學可以一同參與於科學實驗之中。 <br/> The research integrates DIY sensors by students and the professional microclimate data logger from HKU, to conduct the comprehensive fieldwork study at school campus. We aims to provide students the opportunities to participate in scientific studies and better understand their own campus.</p></br>
+				<p><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Part1.png" style="width:100%;"></p>
+				<p style="color:orange;font-size:18px;font-weight:bold;"><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Icon2.png" style="width:5%;"> <b> 氣象數據監測 Meteorological Data Observation </b></p>
+				<p> 微氣候監測儀即時紀錄溫度、濕度、海平面氣壓、太陽輻射等的數據，並以無線網路傳送至雲端數據庫，以便計算校內𣎴同環境的體感舒適度。同時，儀器以太陽能方式充電，讓我們可以更方便將感應器裝置於沒有長期電源供應的環境。 <br/> Our microclimate sensor measures real-time air temperature, relative humidity, sea-level pressure, and solar radiation data for the calculation in comfortability index. The data are keep sending to the cloud server for instant storage and visualization. Besides, solar panel are installed in the sensors for the power sustainability.</p></br>
+				<p><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Part2.png" style="width:100%;"></p>
+				<p style="color:orange;font-size:18px;font-weight:bold;"><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Icon3.png" style="width:5%;"> <b> FLIR無人機感測 FLIR Drone Thermal Sensing </b></p>
+				<p> 除了安裝在不同位置的感應器外，我們還會利用無人機進行前視紅外線熱影像(FLIR)探知空間數據。合成兩者資訊將更有效地了解整體校園內的熱分佈，方便尋找「熱點」。 <br/> Instead of the installation of microclimate sensors in various of locations in campus, we also applies FLIR drone camera to sense the spatial thermal information. By integrating the measurement data, we can further evaluate the heat spatiality and inspect the “hotspots” at school.</p></br>
+				<p><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Part3.png" style="width:100%;"></p>
+				<p style="color:orange;font-size:18px;font-weight:bold;"><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Icon4.png" style="width:5%;"> <b> 流體熱力學模型 CFD Modeling </b></p>
+				<p> 實地監測只能反映到校園內某地區位置的狀況，但配合上流體熱力學的電腦模型分析，團隊可以讓我們更進一步瞭解風、日照角度與建築物的設計如何影響到微氣候的特性。 <br/> Real-time monitoring maybe a limited way to understanding the spatially variated environment, by coupling with the computational fluid dynamics (CFD) models, our research team can further investigate how wind profile, solar angle and building designs may interact with the microclimate characteristics.</p></br>
+				<p><img src="https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Part4.png" style="width:100%;"></p>
+			</div>
+			</div>
+		</div>
+
+		
+		<div class="mailmodal" id="mailmodal">
+			<div class="modal-content">
+				<span class="mailclose">&times;</span>
+				<p><b>如有任何建議或查詢 歡迎於下方留言，還望各位不吝賜教。(歡迎留下聯絡方式及稱呼) <br/> For any enquiry and recommendation, please do not hestitate to leave your comments here <br/> (You may also leave your contact info for further discussion)</b></p><br>
+				<form action="mailto:mhjchang@connect.hku.hk" method="post" target="_top">
+				<textarea></textarea><br><br>
+				<input type="Submit" name="傳送 Submit" value="傳送 Submit">
+				</form>
+			</div>
+		</div>
+		
+		<script>
+		
+		//INFOMODAL
+		
+		// Get the modal
+		var infomodal = document.getElementById("infomodal");
+
+		// Get the button that opens the modal
+		var infobtn = document.getElementById("infoBtn");
+
+		// Get the <span> element that closes the modal
+		var infospan = document.getElementsByClassName("infoclose")[0];
+
+		// When the user clicks on the button, open the modal
+		infobtn.onclick = function() {
+		infomodal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		infospan.onclick = function() {
+		infomodal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == infomodal) {
+		infomodal.style.display = "none";
+		}}
+		
+		//MAILMODAL
+		
+		// Get the modal
+		var mailmodal = document.getElementById("mailmodal");
+
+		// Get the button that opens the modal
+		var mailbtn = document.getElementById("mailBtn");
+
+		// Get the <span> element that closes the modal
+		var mailspan = document.getElementsByClassName("mailclose")[0];
+
+		// When the user clicks on the button, open the modal
+		mailbtn.onclick = function() {
+		mailmodal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		mailspan.onclick = function() {
+		mailmodal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == mailmodal) {
+		mailmodal.style.display = "none";
+		}}
+		
+		</script>
+		
+		<script type="module">
+
+			import * as THREE from './three119/build/three.module.js';
+
+			import { ColladaLoader } from './three119/examples/jsm/loaders/ColladaLoader.js';
+			
+			import { OrbitControls } from './three119/examples/jsm/controls/OrbitControls.js';
+			
+			var container, clock;
+			var camera, controls, scene, renderer, collada, simplegeometry;
+
+			init();
+			animate();
+
+			function init() {
+
+				container = document.getElementById( 'container' );
+
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 );
+				camera.position.set( 220, 220, 400 );
+				//camera.lookAt( 200, 0, 0 );
+
+				scene = new THREE.Scene();
+
+				scene.background = new THREE.Color( 0x003F57 );
+					
+				clock = new THREE.Clock();
+
+				// loading manager
+
+				var loadingManager = new THREE.LoadingManager( function () {
+
+					scene.add( simplegeometry );
+
+				} );
+
+				// collada
+
+				var loader = new ColladaLoader( loadingManager );
+				loader.load( 'https://raw.githubusercontent.com/mhjchang/STMC_Microclimate/master/Output_STMC_cad.dae', function ( collada ) {
+
+					simplegeometry = collada.scene;
+					
+				} );
+	
+				//
+
+				
+				//var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.7 );
+				//directionalLight.position.set( 200, 60, 200 ).normalize();
+				//scene.add( directionalLight );
+
+				var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.7 );
+				directionalLight.position.set( -200, -200, -200 ).normalize();
+				scene.add( directionalLight );
+
+				var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.9 );
+				directionalLight.position.set( 310, -310, 10 ).normalize();
+				scene.add( directionalLight );
+
+				var directionalLight = new THREE.DirectionalLight( 0xffffff, 0.9 );
+				directionalLight.position.set( 0, 50, 0 ).normalize();
+				scene.add( directionalLight );
+
+				var spotLight = new THREE.SpotLight(0xffffff);
+				spotLight.position.set(50, 90, 50);
+				spotLight.angle = Math.PI /6
+				scene.add(spotLight); //光对象添加到scene场景中
+
+				//
+
+				renderer = new THREE.WebGLRenderer({ antialias: true });
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+
+				// controls
+
+				controls = new OrbitControls( camera, renderer.domElement );
+
+				//controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
+				//controls.autoRotate = true;
+				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+				controls.dampingFactor = 0.05;
+
+				controls.screenSpacePanning = false;
+
+				controls.minDistance = 10;
+				controls.maxDistance = 500;
+
+				controls.maxPolarAngle = Math.PI / 2;
+				
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				controls.update();
+				
+				render();
+
+			}
+
+			function render() {
+			
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+	</body>
+</html>
